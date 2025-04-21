@@ -1,61 +1,32 @@
-# Node.js Web API for Random Image Retrieval
+# My Next.js App
 
-This project is a simple web API built with Node.js and Express that randomly retrieves an image from a specified folder.
+This project is a simple Next.js application that displays a random image from a specified folder.
 
 ## Project Structure
 
-```
-node-web-api
-├── src
-│   ├── app.js               # Entry point of the application
-│   ├── routes
-│   │   └── images.js        # Route for retrieving random images
-│   └── images               # Folder to store image files
-├── package.json             # npm configuration file
-└── README.md                # Project documentation
-```
+- **public/images**: This folder is used to store images that will be displayed randomly.
+- **pages/index.tsx**: This file serves as the homepage of the application, typically used for displaying welcome messages or navigation.
+- **pages/random.tsx**: This file contains a page that randomly selects and displays an image from the `public/images` folder.
+- **styles/globals.css**: This file contains global styles applied throughout the application.
+- **next.config.js**: This file is the configuration file for Next.js, which may include custom settings.
+- **tsconfig.json**: This file is the TypeScript configuration file, specifying compilation options and files to include.
+- **package.json**: This file is the npm configuration file, listing the project's dependencies and scripts.
 
 ## Getting Started
 
-### Prerequisites
+To get started with this project, follow these steps:
 
-- Node.js (version 14 or higher)
-- npm (Node package manager)
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install the dependencies using `npm install`.
+4. Run the development server with `npm run dev`.
+5. Open your browser and go to `http://localhost:3000` to view the application.
 
-### Installation
+## Usage
 
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
+- Visit the homepage to see the welcome message.
+- Navigate to `/random` to view a randomly selected image from the `public/images` folder.
 
-2. Navigate to the project directory:
-   ```
-   cd node-web-api
-   ```
-
-3. Install the dependencies:
-   ```
-   npm install
-   ```
-
-### Running the Application
-
-To start the server, run the following command:
-```
-node src/app.js
-```
-
-The server will start on `http://localhost:3000`.
-
-### API Endpoint
-
-- `GET /images/random`: This endpoint returns a random image from the `src/images` folder.
-
-### Adding Images
-
-Place your image files in the `src/images` directory to make them available for retrieval.
-
-### License
+## License
 
 This project is licensed under the MIT License.
