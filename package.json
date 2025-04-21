@@ -11,7 +11,8 @@
     "fs": "^0.0.1-security",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "wrangler": "^4.12.0"
   },
   "devDependencies": {
     "@types/node": "latest",
