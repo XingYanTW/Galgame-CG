@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Random Galgame CG</title>
+        <title>Galgame CG</title>
         <meta name="description" content="隨機顯示一張 Galgame CG 圖片" />
       </Head>
       <div className="header-container">
