@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import { CopyBlock, dracula } from 'react-code-blocks'
+
 
 export default function Home() {
   return (
@@ -13,19 +15,33 @@ export default function Home() {
       <div className="main">
         <span className="content">
           <h1 id='usage'>使用方法</h1>
-          <hr/>
+          <hr />
+          {/* add code block here */}
+          <CopyBlock
+                text="<img src='https://galgame-cg.vercel.app/api/random-image'/>"
+                language='html'
+                showLineNumbers={false}
+                theme={dracula}
+            />
+            <br/>
+          <CopyBlock
+                text="<body style='https://galgame-cg.vercel.app/api/random-image'>"
+                language='html'
+                showLineNumbers={false}
+                theme={dracula}
+            />
           <p>待寫...</p>
           <h1 id='build'>構建</h1>
-          <hr/>
+          <hr />
           <p>待寫...</p>
           <h1 id='recommendations'>圖片推薦</h1>
-          <hr/>
+          <hr />
           <p>待寫...</p>
         </span>
         <span className="list">
-            <a href="#usage">使用方法</a><br/><br/>
-            <a href="#build">構建</a><br/><br/>
-            <a href="#recommendations">圖片推薦</a><br/><br/>
+          <a href="#usage">使用方法</a><br /><br />
+          <a href="#build">構建</a><br /><br />
+          <a href="#recommendations">圖片推薦</a><br /><br />
         </span>
       </div>
       {/* Button to the top */}
@@ -33,7 +49,7 @@ export default function Home() {
         <img src="/arrow.svg" alt="Back to top" />
       </div>
       <style jsx>{`
-        .back-to-top {
+      .back-to-top {
           position: fixed;
           bottom: 20px;
           right: 20px;
@@ -48,8 +64,6 @@ export default function Home() {
           width: 30px;
           height: 30px;
         }
-      `}</style>
-      <style jsx>{`
         .header-container {
           position: relative;
           width: 100%;
@@ -111,6 +125,14 @@ export default function Home() {
         }
       `}</style>
       <style jsx global>{`
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        /* 啟用 Anchor 錨點平滑滾動 */
+        html {
+          scroll-behavior: smooth;
+       }
         body {
           margin: 0;
           padding: 0;
