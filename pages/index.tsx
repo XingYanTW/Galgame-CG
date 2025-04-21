@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { CopyBlock, dracula } from 'react-code-blocks'
+import { CodeBlock , dracula } from 'react-code-blocks'
 
 
 export default function Home() {
@@ -17,14 +17,14 @@ export default function Home() {
           <h1 id='usage'>使用方法</h1>
           <hr />
           {/* add code block here */}
-          <CopyBlock
+          <CodeBlock
                 text="<img src='https://galgame-cg.vercel.app/api/random-image'/>"
                 language='html'
                 showLineNumbers={false}
                 theme={dracula}
             />
             <br/>
-          <CopyBlock
+          <CodeBlock
                 text="<body style='https://galgame-cg.vercel.app/api/random-image'>"
                 language='html'
                 showLineNumbers={false}
