@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import { CodeBlock , dracula } from 'react-code-blocks'
 
+const css = `.background {
+    background-image: url('https://galgame-cg.vercel.app/api/random-image');
+  }
+`
 
 export default function Home() {
   return (
@@ -25,8 +29,8 @@ export default function Home() {
             />
             <br/>
           <CodeBlock
-                text="<body style='https://galgame-cg.vercel.app/api/random-image'>"
-                language='html'
+                text={css}
+                language='css'
                 showLineNumbers={false}
                 theme={dracula}
             />
