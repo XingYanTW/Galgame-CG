@@ -7,11 +7,11 @@ const css = `.background {
   }
 `
 const build1 = `git clone https://github.com/XingYanTW/Galgame-CG.git
-            cd Galgame-CG
-            yarn install`
+cd Galgame-CG
+yarn install`
 
 const build2 = `yarn build
-          yarn start`
+yarn start`
 
 
 export default function Home() {
