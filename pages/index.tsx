@@ -21,6 +21,15 @@ export default function Home() {
         <title>Galgame CG</title>
         <meta name="description" content="隨機顯示一張 Galgame CG 圖片" />
       </Head>
+      <div>
+        <img
+          src="github-mark.png"
+          alt="GitHub"
+          className="github-mark"
+          onClick={() => window.open('https://github.com/XingYanTW/Galgame-CG')}
+        />
+
+      </div>
       <div className="header-container">
         <h1 className="title">Galgame CG</h1>
       </div>
@@ -87,6 +96,22 @@ export default function Home() {
         <img src="/arrow.svg" alt="Back to top" />
       </div>
       <style jsx>{`
+      .github-mark {
+        background-color: #fff;
+        position: fixed;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 100;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out;
+      }
+      .github-mark:hover {
+        transform: scale(1.1);
+      }
+
       .back-to-top {
           position: fixed;
           bottom: 20px;
