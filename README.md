@@ -1,23 +1,39 @@
 # Galgame CG
 
 ## 使用方式
-
+HTML範例
 ```html
 <img src='https://galgame-cg.vercel.app/api/random-image'/>
 ```
-
+CSS範例
 ```css
 .background {
   background-image: url('https://galgame-cg.vercel.app/api/random-image');
 }
 ```
 
-待寫...
+## 開發
+下載專案
+```bash
+git clone https://github.com/XingYanTW/Galgame-CG.git
+cd Galgame-CG
+yarn install
+```
+以開發模式啟動  
+```bash
+yarn dev
+```
+以生產環境啟動
+```bash
+yarn build
+yarn start
+```
 
-## 構建
+## CG 推薦
 
-待寫...
+### 1. Fork
 
-## CG推薦
+點擊右上角Fork後將圖片丟進public\images資料夾並提出pull request
 
-待寫...
+### 2. Issue
+[點擊此連結](https://github.com/XingYanTW/Galgame-CG/issues/new)到達Issue頁面提交新的Issue

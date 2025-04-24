@@ -1,10 +1,18 @@
+import build from 'next/dist/build'
 import Head from 'next/head'
-import { CodeBlock , dracula } from 'react-code-blocks'
+import { CodeBlock, dracula } from 'react-code-blocks'
 
 const css = `.background {
     background-image: url('https://galgame-cg.vercel.app/api/random-image');
   }
 `
+const build1 = `git clone https://github.com/XingYanTW/Galgame-CG.git
+            cd Galgame-CG
+            yarn install`
+
+const build2 = `yarn build
+          yarn start`
+
 
 export default function Home() {
   return (
@@ -20,32 +28,58 @@ export default function Home() {
         <span className="content">
           <h1 id='usage'>使用方法</h1>
           <hr />
-          {/* add code block here */}
+          <p>HTML範例</p>
           <CodeBlock
-                text="<img src='https://galgame-cg.vercel.app/api/random-image'/>"
-                language='html'
-                showLineNumbers={false}
-                theme={dracula}
-            />
-            <br/>
+            text="<img src='https://galgame-cg.vercel.app/api/random-image'/>"
+            language='html'
+            showLineNumbers={false}
+            theme={dracula}
+          />
+          <br />
+          <p>CSS範例</p>
           <CodeBlock
-                text={css}
-                language='css'
-                showLineNumbers={false}
-                theme={dracula}
-            />
-          <p>待寫...</p>
-          <h1 id='build'>構建</h1>
+            text={css}
+            language='css'
+            showLineNumbers={false}
+            theme={dracula}
+          />
+          <h1 id='build'>開發</h1>
           <hr />
-          <p>待寫...</p>
-          <h1 id='recommendations'>圖片推薦</h1>
+          <p>下載專案</p>
+          <CodeBlock
+            text={build1}
+            language='bash'
+            showLineNumbers={false}
+            theme={dracula}
+          />
+          <p>以開發模式啟動</p>
+          <CodeBlock
+            text='yarn dev'
+            language='bash'
+            showLineNumbers={false}
+            theme={dracula}
+          />
+          <p>以生產環境啟動</p>
+          <CodeBlock
+            text={build2}
+            language='bash'
+            showLineNumbers={false}
+            theme={dracula}
+          />
+          <h1 id='recommendations'>CG 推薦</h1>
           <hr />
-          <p>待寫...</p>
+
+          <h3> 1. Fork </h3>
+
+          <p>點擊右上角Fork後將圖片丟進public\images資料夾並提出pull request</p>
+
+          <h3> 2. Issue </h3>
+          <p><a href='https://github.com/XingYanTW/Galgame-CG/issues/new'>點擊此連結</a>到達Issue頁面提交新的Issue</p>
         </span>
         <span className="list">
           <a href="#usage">使用方法</a><br /><br />
-          <a href="#build">構建</a><br /><br />
-          <a href="#recommendations">圖片推薦</a><br /><br />
+          <a href="#build">開發</a><br /><br />
+          <a href="#recommendations">CG 推薦</a><br /><br />
         </span>
       </div>
       {/* Button to the top */}
