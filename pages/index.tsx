@@ -138,7 +138,7 @@ export default function Home() {
           z-index: 1;
         }
         .content {
-          height: 200vh;
+          /*height: 200vh;*/
           background-color: #ffffff;
           margin: 8px;
           padding: 20px;
@@ -146,7 +146,7 @@ export default function Home() {
           width: 78%;
         }
         .list {
-          height: 200vh;
+          height: 109%;
           background-color: #ffffff;
           margin: 8px;
           padding: 20px;
