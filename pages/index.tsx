@@ -96,6 +96,11 @@ export default function Home() {
         <img src="/arrow.svg" alt="Back to top" />
       </div>
       <style jsx>{`
+        @media (max-width: 768px) {
+    .list {
+      display: none;
+    }
+  }
       .github-mark {
         background-color: #fff;
         position: fixed;
